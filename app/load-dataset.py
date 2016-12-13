@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-
+import os
 import pandas
 
-
-file_path = 'iris.data'
+dir_path = os.path.dirname(os.path.realpath(__file__))
+file_path = dir_path + '/../resources/iris.data'
 col_names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-dataset = pandas.read_csv(file_path, names=col_names)
 
+dataset = pandas.read_csv(file_path, names=col_names)
 
 if __name__ == '__main__':
     # shape (total rows, total cols)
