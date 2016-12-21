@@ -6,7 +6,7 @@ import load_dataset as load
 dataset = load.dataset()
 
 # box and whisker plots
-dataset.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+dataset.plot(kind='box', subplots=True, layout=(2, 2), sharex=False, sharey=False)
 # histograms
 dataset.hist()
 # scatter plot matrix
