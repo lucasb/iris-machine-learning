@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 from matplotlib import pyplot
 from pandas.tools.plotting import scatter_matrix
 import load_dataset as load
@@ -14,5 +15,5 @@ scatter_matrix(dataset)
 
 
 if __name__ == '__main__':
-    # Open UI with graphs
+    # open ui with graphs
     pyplot.show()
