@@ -13,7 +13,6 @@ dataset.hist()
 # scatter plot matrix
 scatter_matrix(dataset)
 
-
 if __name__ == '__main__':
     # open ui with graphs
     pyplot.show()
