@@ -39,8 +39,8 @@ def ranking():
         # score between 0-1 for model
         model_results = model_selection.cross_val_score(model_class, validate.X_train,
                                                         validate.Y_train, cv=kf, scoring=SCORING)
-        # short, rank percent and standard value
-        return short, model_results.mean(), model_results.std()
+        # short, rank percent, standard value and raw model results
+        return short, model_results.mean(), model_results.std(), model_results
     # call score for each model and sort by highest rank percent value
     return sorted(map(score, models), key=lambda i: i[1], reverse=True)
 
