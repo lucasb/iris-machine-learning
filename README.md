@@ -26,5 +26,5 @@ python model_visualization.py
 # 6
 python svm_prediction.py
 # 7 
-python knn_prediciton.py
+python knn_prediction.py
 ```
