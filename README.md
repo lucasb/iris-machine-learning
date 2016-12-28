@@ -10,4 +10,21 @@ pip install -r requirements
 ```
 
 #### Run
-TDB
+
+```
+cd app
+# 1
+python load_dataset.py
+# 2
+python data_visualization.py
+# 3
+python validate_dataset.py
+# 4
+python select_model.py
+# 5
+python model_visualization.py
+# 6
+python svm_prediction.py
+# 7 
+python knn_prediciton.py
+```
